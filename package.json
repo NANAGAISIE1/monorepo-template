@@ -9,9 +9,13 @@
         "trunk:clean": "turbo clean",
         "trunk:format": "trunk fmt --all",
         "trunk:check": "trunk check --verbose",
+        "add:workspace": "turbo gen workspace",
+        "add:electron": "turbo gen electron-app",
+        "create:workspace": "turbo gen create-workspace",
         "trunk:fix": "trunk check --fix"
     },
     "devDependencies": {
+        "@electron-forge/cli": "^7.4.0",
         "@trunkio/launcher": "^1.3.1",
         "check-peer-dependencies": "^4.3.0",
         "prettier": "^3.2.5",
