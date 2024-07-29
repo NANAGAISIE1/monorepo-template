@@ -31,7 +31,7 @@ export function addDependenciesToPackageJson(
                     const pkgJson = JSON.parse(
                         fs.readFileSync(pkgJsonPath, "utf-8")
                     )
-                    packageJson[type][pkgJson.name] = `workspace:*`
+                    packageJson[type][pkgJson.name] = `*`
                 } else {
                     console.warn(`Package.json not found for ${pkg}. Skipping.`)
                 }

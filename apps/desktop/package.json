@@ -1,6 +1,6 @@
 {
-    "name": "electron",
-    "productName": "electron",
+    "name": "desktop",
+    "productName": "desktop",
     "version": "1.0.0",
     "description": "My Electron application description",
     "main": ".vite/build/main.js",
@@ -23,13 +23,14 @@
         "@electron/fuses": "^1.8.0",
         "@typescript-eslint/eslint-plugin": "^5.0.0",
         "@typescript-eslint/parser": "^5.0.0",
+        "electron": "31.3.0",
         "eslint": "^8.0.1",
         "eslint-plugin-import": "^2.25.0",
         "ts-node": "^10.0.0",
         "typescript": "~4.5.4",
         "vite": "^5.0.12",
-        "@repo/eslint-config": "workspace:*",
-        "@repo/typescript-config": "workspace:*"
+        "@repo/eslint-config": "*",
+        "@repo/typescript-config": "*"
     },
     "keywords": [],
     "author": {
@@ -38,8 +39,7 @@
     },
     "license": "MIT",
     "dependencies": {
-        "electron": "31.3.0",
         "electron-squirrel-startup": "^1.0.1",
-        "@repo/ui": "workspace:*"
+        "@repo/ui": "*"
     }
 }

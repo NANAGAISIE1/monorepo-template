@@ -39,6 +39,9 @@ export const setupWorkspace: PlopTypes.CustomActionFunction = async (
                 copyCIFiles: false,
             })
             console.log("Electron Forge packages installed successfully!")
+            console.log(
+                "Install packages dependencies with your package manager"
+            )
         } catch (error) {
             console.error("Failed to initialize Electron app:", error)
             throw new Error("Failed to initialize Electron app")

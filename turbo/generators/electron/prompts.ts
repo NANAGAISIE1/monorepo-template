@@ -62,7 +62,7 @@ export const electronPrompts: PlopTypes.Prompts = [
             "peerDependencies",
             "optionalDependencies",
         ],
-        when: (answers: Partial<Answers>) => answers.addWorkspaceDependencies,
+        when: (answers: Partial<Answers>) => !!answers.addWorkspaceDependencies,
     },
     {
         type: "checkbox",
@@ -71,7 +71,7 @@ export const electronPrompts: PlopTypes.Prompts = [
             `Which packages should be added as dependencies to "${answers.appName}"?`,
         choices: getLocalPackages(),
         when: (answers: Partial<Answers>) =>
-            answers.dependencyTypesToModify?.includes("dependencies"),
+            !!answers.dependencyTypesToModify?.includes("dependencies"),
     },
     {
         type: "checkbox",
@@ -80,7 +80,7 @@ export const electronPrompts: PlopTypes.Prompts = [
             `Which packages should be added as devDependencies to "${answers.appName}"?`,
         choices: getLocalPackages(),
         when: (answers: Partial<Answers>) =>
-            answers.dependencyTypesToModify?.includes("devDependencies"),
+            !!answers.dependencyTypesToModify?.includes("devDependencies"),
     },
     {
         type: "checkbox",
@@ -89,7 +89,7 @@ export const electronPrompts: PlopTypes.Prompts = [
             `Which packages should be added as peerDependencies to "${answers.appName}"?`,
         choices: getLocalPackages(),
         when: (answers: Partial<Answers>) =>
-            answers.dependencyTypesToModify?.includes("peerDependencies"),
+            !!answers.dependencyTypesToModify?.includes("peerDependencies"),
     },
     {
         type: "checkbox",
@@ -98,6 +98,6 @@ export const electronPrompts: PlopTypes.Prompts = [
             `Which packages should be added as optionalDependencies to "${answers.appName}"?`,
         choices: getLocalPackages,
         when: (answers: Partial<Answers>) =>
-            answers.dependencyTypesToModify?.includes("optionalDependencies"),
+            !!answers.dependencyTypesToModify?.includes("optionalDependencies"),
     },
 ]
