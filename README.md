@@ -21,10 +21,10 @@ This monorepo includes the following applications and packages:
 
 ## Features ✨
 
-- **Monorepo Structure**: Simplifies dependency management and code sharing between projects.
-- **Shared Configurations**: Centralizes ESLint, TypeScript, and Tailwind CSS configurations for consistency.
-- **Reusable UI Components**: Provides a consistent look and feel across applications with a shared UI package.
-- **Modern Tooling**: Leverages the latest tools and frameworks like Next.js, Vite, and Electron for optimal development experience.
+-   **Monorepo Structure**: Simplifies dependency management and code sharing between projects.
+-   **Shared Configurations**: Centralizes ESLint, TypeScript, and Tailwind CSS configurations for consistency.
+-   **Reusable UI Components**: Provides a consistent look and feel across applications with a shared UI package.
+-   **Modern Tooling**: Leverages the latest tools and frameworks like Next.js, Vite, and Electron for optimal development experience.
 
 ## Getting Started 🏁
 
